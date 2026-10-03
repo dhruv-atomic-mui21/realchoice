@@ -1,0 +1,13 @@
+# Antigravity internal files
+.antigravity/
+scratch/
+*.log
+
+# Editor & OS artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Vercel deployment cache
+.vercel/
