@@ -216,8 +216,6 @@
     initStoreViewSwitcher();
     initFitCalculator();
     renderReviews('all');
-    initProposalDrawer();
-    initRoiCalculator();
     initAddressCopy();
     initSmoothScroll();
   });
@@ -677,59 +675,7 @@
     `).join('');
   }
 
-  // ==========================================================================
-  // 8. CLIENT PROPOSAL DRAWER & INTERACTIVE ROI CALCULATOR
-  // ==========================================================================
-  function initProposalDrawer() {
-    const drawer = document.getElementById('proposalDrawer');
-    const triggers = document.querySelectorAll('.open-proposal-trigger');
-    const closeBtn = document.getElementById('closeProposalDrawer');
 
-    triggers.forEach(t => {
-      t.addEventListener('click', () => {
-        if (drawer) drawer.classList.add('open');
-      });
-    });
-
-    if (closeBtn && drawer) {
-      closeBtn.addEventListener('click', () => {
-        drawer.classList.remove('open');
-      });
-    }
-  }
-
-  function initRoiCalculator() {
-    const walkinSlider = document.getElementById('roiWalkins');
-    const billSlider = document.getElementById('roiBill');
-    const walkinVal = document.getElementById('roiWalkinsVal');
-    const billVal = document.getElementById('roiBillVal');
-    const outputEl = document.getElementById('roiTotalRevenue');
-
-    function updateRoi() {
-      const walkins = parseInt(walkinSlider ? walkinSlider.value : 4);
-      const bill = parseInt(billSlider ? billSlider.value : 1500);
-
-      if (walkinVal) walkinVal.textContent = `+${walkins} shoppers / day`;
-      if (billVal) billVal.textContent = `₹${bill.toLocaleString('en-IN')}`;
-
-      // Monthly extra revenue
-      const monthlyTotal = walkins * bill * 30;
-      if (outputEl) {
-        outputEl.textContent = `+₹${monthlyTotal.toLocaleString('en-IN')} / month`;
-      }
-    }
-
-    if (walkinSlider) walkinSlider.addEventListener('input', updateRoi);
-    if (billSlider) billSlider.addEventListener('input', updateRoi);
-
-    updateRoi();
-  }
-
-  window.scheduleContractMeeting = function () {
-    const walkins = document.getElementById('roiWalkins') ? document.getElementById('roiWalkins').value : 4;
-    const msg = `Hello! I reviewed the interactive website demo prepared for Real Choice Menswear (Jivraj Park). I would like to discuss implementing this website, custom domain, and WhatsApp ordering system for my store.`;
-    window.open(`https://wa.me/${STORE_CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`, '_blank');
-  };
 
   // ==========================================================================
   // 9. UTILITIES: TOAST NOTIFICATIONS & ADDRESS COPY

@@ -56,8 +56,8 @@ realchoice/
    - 1-click WhatsApp deep-link generation pre-populating item name, selected size (M/L/XL/XXL), store price, and SKU.
 3. **Smart Size Advisor**:
    - Computes recommended sizes based on height (155–198 cm), weight (50–115 kg), and styling preference (Slim / Regular / Oversized).
-4. **Client Acquisition & ROI Drawer**:
-   - Slide-over executive presentation with customizable footfall and bill size sliders for sales meetings with store ownership.
+4. **Physical Storefront & Maps Hub**:
+   - Instant 1-click directions to Jivraj Cross Road (opp. Sahjanand Complex) with interactive storefront photography.
 5. **Mobile-First Conversion Bar**:
    - Ergonomic sticky bottom bar on `<768px` viewports for immediate 1-tap call, map routing, and WhatsApp booking.
 

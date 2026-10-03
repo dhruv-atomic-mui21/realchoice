@@ -42,14 +42,6 @@
             </svg>
             <span>Jivraj Cross Rd, Ahmedabad</span>
           </a>
-
-          <!-- Client Contract Pitch Mode Toggle -->
-          <button class="pitch-mode-pill open-proposal-trigger" title="Click to view Client Web Proposal & ROI Details">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-            </svg>
-            <span>Website Demo & Proposal Mode</span>
-          </button>
         </div>
       </div>
     </div>
@@ -651,8 +643,7 @@
       <div class="footer-bottom">
         <div>© 2026 Real Choice Collection. All rights reserved. Jivraj Park, Ahmedabad 380051.</div>
         <div style="display:flex;gap:1rem;align-items:center;">
-          <span>Demo Concept Prepared for Real Choice Management</span>
-          <button class="open-proposal-trigger" style="color:var(--accent);font-weight:700;text-decoration:underline;">View Proposal</button>
+          <span>Premium Men's Clothing Store · Jivraj Cross Road</span>
         </div>
       </div>
     </div>
@@ -707,116 +698,7 @@
     </div>
   </div>
 
-  <!-- ==========================================================================
-       FLOATING PROPOSAL TRIGGER PILL (FOR THE CLIENT WALKTHROUGH)
-       ========================================================================== -->
-  <button class="floating-proposal-trigger open-proposal-trigger" title="Open Client Contract & Revenue Proposal">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-    </svg>
-    <span>Contract & ROI Pitch</span>
-  </button>
 
-  <!-- ==========================================================================
-       PROPOSAL & CONTRACT ACQUISITION DRAWER
-       ========================================================================== -->
-  <aside class="proposal-drawer" id="proposalDrawer" role="dialog" aria-modal="true" aria-label="Client Proposal and ROI">
-    <div class="drawer-header">
-      <h3>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-        </svg>
-        <span>Proposal for Real Choice</span>
-      </h3>
-      <button class="modal-close-btn" id="closeProposalDrawer" style="position:static;" aria-label="Close proposal drawer">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-        </svg>
-      </button>
-    </div>
-
-    <div class="drawer-scrollable">
-      <div class="proposal-card-box">
-        <h4>Why Real Choice Needs This Website</h4>
-        <p>
-          Currently, Real Choice is rated 4.9★ with great footfall, but loses customers who search online on Google before traveling to Jivraj Park. This website fixes that:
-        </p>
-
-        <ul class="proposal-feature-list">
-          <li>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-            <span><strong>Zero Commission WhatsApp Inquiries:</strong> Shoppers reserve items directly with you instead of paying 30% fees to marketplaces.</span>
-          </li>
-          <li>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-            <span><strong>#1 Google Search Ranking:</strong> Outrank competitors in Jivraj Park, Vejalpur, Vasna, and Satellite.</span>
-          </li>
-          <li>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-            <span><strong>Instant Digital Lookbook:</strong> When customers message "Bhai new shirts ke photos bhejo", send one professional link.</span>
-          </li>
-          <li>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-            <span><strong>1-Click Navigation:</strong> Direct footfall from Vejalpur Road straight to your storefront opposite Sahjanand Complex.</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- ROI Calculator -->
-      <div class="roi-calculator-box">
-        <h4 style="color:#fff;font-size:0.95rem;font-weight:700;margin-bottom:0.35rem;">Real Choice Revenue Projection</h4>
-        <p style="font-size:0.8rem;color:var(--fg-secondary);margin-bottom:1rem;">
-          Estimate your additional monthly sales from this website:
-        </p>
-
-        <div style="margin-bottom:1rem;">
-          <div style="display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:0.25rem;">
-            <span>Extra Walk-ins Per Day</span>
-            <span id="roiWalkinsVal" style="font-weight:700;color:var(--accent);">+4 shoppers / day</span>
-          </div>
-          <input type="range" id="roiWalkins" min="1" max="15" value="4" step="1" />
-        </div>
-
-        <div style="margin-bottom:1rem;">
-          <div style="display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:0.25rem;">
-            <span>Average Bill Per Customer</span>
-            <span id="roiBillVal" style="font-weight:700;color:var(--accent);">₹1,500</span>
-          </div>
-          <input type="range" id="roiBill" min="600" max="3500" value="1500" step="100" />
-        </div>
-
-        <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:0.75rem;text-align:center;">
-          <div style="font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;">Projected Extra Revenue</div>
-          <div class="roi-output-number" id="roiTotalRevenue">+₹1,80,000 / month</div>
-          <div style="font-size:0.75rem;color:var(--green);">✓ More than 10x ROI on website development!</div>
-        </div>
-      </div>
-
-      <div class="proposal-card-box">
-        <h4>Included in the Website Package</h4>
-        <ul class="proposal-feature-list">
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Custom .com / .in domain & high-speed cloud hosting</span></li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Full Google Business Profile & Google Maps verification SEO</span></li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Mobile-optimized design (loads in under 1 second)</span></li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>WhatsApp direct order dispatch system</span></li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Seasonal collection updates & dedicated support</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="drawer-footer">
-      <button class="btn btn-whatsapp" style="width:100%;" onclick="scheduleContractMeeting()">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
-        </svg>
-        <span>Discuss Contract with Store Owner</span>
-      </button>
-
-      <button class="btn btn-secondary btn-sm" id="closeDrawerSecondary" onclick="document.getElementById('proposalDrawer').classList.remove('open')">
-        Close Proposal & Continue Exploring
-      </button>
-    </div>
-  </aside>
 
   <!-- Script -->
   <script src="app.js"></script>
